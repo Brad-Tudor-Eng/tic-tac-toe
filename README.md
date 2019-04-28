@@ -131,7 +131,8 @@ As for the test, I chose to modify the existing test to ensure that the state st
 
 ### Thoughts
 -  More Time: 
-> I was really looking forward to doing this history portion but, ran out of time.  If I can find some free time I'll proably go back and finish it for fun.  
+> I was really looking forward to doing this history portion but, ran out of time.  If I can find some free time I'll proably go back and finish it for fun. 
+I'd also go back and refactor some of the logic to put it into a seperate file.  I hate to see React components getting that long.
 
 - Improvements:  
 > Things could be broken out into specific componets. I.e. Board, Title, Cell Selectors.  
