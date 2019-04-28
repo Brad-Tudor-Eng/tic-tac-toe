@@ -1056,3 +1056,25 @@ ol {
 .is-disabled {
   pointer-events: none;
   opacity: 0.5; }
+
+.submit {
+  margin-top: 1rem;
+  width: 100%; }
+
+.board__row {
+  display: flex; }
+
+.board__button {
+  height: 5rem;
+  width: 5rem;
+  border: 2px solid #363636;
+  cursor: pointer;
+  background: #FFFFFF;
+  transition: background .75s ease-out; }
+  .board__button_player_O {
+    background-color: #EFEFEF;
+    cursor: default; }
+  .board__button_player_X {
+    background-color: #000000;
+    color: #FFFFFF;
+    cursor: default; }

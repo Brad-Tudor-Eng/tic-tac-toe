@@ -9,19 +9,23 @@ import { Play } from 'routes/Play';
 
 Enzyme.configure({ adapter: new Adapter() })
 
-describe('Play', () => {  
-  
-  describe('Inital State',()=>{
-    it('Initial state shouldn\'t have row or column as null', () => {
+describe('Play', () => {
+  describe('Check Initial State',()=>{
+    //modified this test to check for origional error of starting row
+    //and column as null
+    it('does not allow row and column to start as null', () => {
       const dispatch = spy();
       const component = shallow(<Play dispatch={ dispatch } game={ gameInit() } />);
 
       expect(component.state()).toEqual({
+        endOfGame: false,
+        winner: 2,
         row: 0,
         column: 0
       });
+
     });
-  });
+  })
 
   describe('Move submission', () => {
     it('dispatches the appropriate action to the store', () => {
@@ -30,6 +34,8 @@ describe('Play', () => {
 
       component.setState({ row: 1, column: 1 });
       expect(component.state()).toEqual({
+        endOfGame: false,
+        winner: 2,
         row: 1,
         column: 1
       });
@@ -42,6 +48,6 @@ describe('Play', () => {
         column: 1
       });
     });
-  });
 
+  });
 })

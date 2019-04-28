@@ -1,0 +1,27 @@
+.board{
+
+    &__row{
+        display: flex;
+    }
+
+    &__button{
+        height: 5rem;
+        width: 5rem;
+        border: 2px solid $offblack;
+        cursor: pointer;
+        background: $white;
+
+        transition: background .75s ease-out;
+
+        &_player_O{
+            background-color: $offwhite;
+            cursor: default;
+        }
+
+        &_player_X{
+            background-color: $black;
+            color: $white;
+            cursor: default;
+        }
+    }
+}

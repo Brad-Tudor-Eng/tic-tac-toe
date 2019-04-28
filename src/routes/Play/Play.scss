@@ -3,6 +3,8 @@
 .game__container {
   height: calc(100vh - 9rem);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   > div {
@@ -14,5 +16,16 @@
     @include breakpoint($mobile-lg) {
       margin-top: -10rem;
     }
+  }
+}
+
+.game__board{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__container{
+    margin: 1rem 0;
   }
 }
