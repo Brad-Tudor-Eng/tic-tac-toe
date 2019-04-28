@@ -20,8 +20,6 @@ const winningCondition = [
   [2,5,8]
 ]
 
-
-
 export class Play extends React.Component {
   constructor (props) {
     super(props);
@@ -98,10 +96,6 @@ export class Play extends React.Component {
       alert('Please pick a different row or column!');
     }
 
-  }
-
-  renderMessage(){
-    
   }
 
   render () {

@@ -114,7 +114,7 @@ See something you didn't have time to work on or don't like?
 
 - Planning: ~40 min
 
-> I spent most of the inital time in the project simply laying out what I wanted to do, reading though the code base, and figuring out what tickets I wanted to focus on.
+> I spent most of the inital time in the project simply laying out what I wanted to do, reading though the code base, and figuring out what tickets I wanted to focus on.  Then coming up with a game plan.
 
 - Basics: ~10 min
 
