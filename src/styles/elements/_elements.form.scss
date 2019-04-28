@@ -1,0 +1,18 @@
+.form__input {
+  @include font-size(b2);
+  @include font(regular);
+  appearance: none;
+  padding: 0.7em;
+  border: 0.2rem solid $lightgrey;
+  width: 100%;
+  background: $white;
+
+  &:focus {
+    border-color: $black;
+  }
+}
+
+.is-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}

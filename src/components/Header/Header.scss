@@ -1,0 +1,15 @@
+@import '../../styles/sass-includes';
+
+.header {
+  @extend %page-margins;
+  height: 9rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: $almostwhite;
+  border-bottom: 0.1rem solid $offwhite;
+
+  img {
+    width: 20rem;
+  }
+}

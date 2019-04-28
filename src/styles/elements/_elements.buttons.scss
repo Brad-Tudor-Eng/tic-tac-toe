@@ -1,0 +1,22 @@
+
+// defines basic btn
+.btn {
+  @include font-size(b2);
+  @include font(bold);
+  text-align: center;
+  background: $black;
+  color: $white;
+  padding: 0.734em 1.3em;
+  line-height: 1;  
+  cursor: pointer;
+  border: 0.3rem solid $black;
+  display: inline-block;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:hover { background: transparent; color: $black; }
+
+  &.is-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}

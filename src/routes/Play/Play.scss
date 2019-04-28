@@ -1,0 +1,18 @@
+@import '../../styles/sass-includes';
+
+.game__container {
+  height: calc(100vh - 9rem);
+  display: flex;
+  align-items: center;
+
+  > div {
+    margin-top: -40rem;
+    // media queries
+    @include breakpoint($desktop-lg) {
+      margin-top: -20rem;
+    }
+    @include breakpoint($mobile-lg) {
+      margin-top: -10rem;
+    }
+  }
+}
